@@ -6,7 +6,7 @@ const Price = () => {
   return (
     <section className="section-price">
       <div className="section-inner">
-        <div className="section-price-title">Прайс-лист</div>
+        <div className="section-price-title">Грузоперевозки</div>
         <div className="section-price">
           <div className="section-price__image">
             <img src={truck} alt="" />
@@ -23,7 +23,7 @@ const Price = () => {
 
             <div className="description-item">
               <div className="description-item__title">
-                Услуги манипулятора от 2000 рублей.
+                Услуги манипулятора от 4500 рублей.
               </div>
               <div className="description-item__text">
                 Доставка груза по Московской, Тульской, Калужской области.

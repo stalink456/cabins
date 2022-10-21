@@ -8,7 +8,7 @@ const Header = () => {
           <div className="section-header-top-logo">Аренда бытовок</div>
           <div className="section-header-top__contacts">
             <div className="section-header-top__contacts-telephone">
-              <a href="tel:+79267592241"> +7 (926) 759-22-41</a>
+              <a href="tel:+79646232467"> +7 (964) 623-24-67</a>
             </div>
             <div className="section-header-top__contacts-email">
               kirill.litvin.2000@mail.ru
@@ -18,12 +18,13 @@ const Header = () => {
         <div className="section-header-content">
           <div className="section-header-wrapper">
             <div className="section-header-wrapper__title">
-              Металлические бытовки в аренду
+              Помогаем в организации Вашего строительства
             </div>
             <div className="section-header-wrapper__subtitle">
               <ul>
-                <li>Осуществляем быструю доставку</li>
-                <li>Всегда в наличии</li>
+                <li>Быстро доставим на любой объект</li>
+                <li>Качественная отделка</li>
+                <li>Открытость и честность</li>
               </ul>
             </div>
           </div>

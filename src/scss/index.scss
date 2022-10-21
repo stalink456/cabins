@@ -249,6 +249,8 @@ body {
 
   .section-about-block {
     display: flex;
+    align-items: center;
+    justify-content: center;
 
     &__content,
     &__map {
@@ -272,21 +274,17 @@ body {
 
         &__text {
           font-size: 24px;
-          line-height: 30px;
+          line-height: 45px;
           font-weight: 300;
         }
       }
     }
 
-    &__map {
-      justify-self: center;
-      align-self: center;
-    }
   }
 }
 // === / About ===
 
-.ymaps {
+.section-map {
   height: 500px;
-  width: 400px;
+  width: 600px;
 }

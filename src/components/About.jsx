@@ -11,12 +11,12 @@ const About = () => {
             <div className="description-item">
               <div className="description-item__title">Гарантии</div>
               <div className="description-item__text">
-                Много лет на рынке по аренде бытовок
+                Более трех лет на рынке по аренде бытовок
               </div>
               <div className="description-item__text">Всегда на связи</div>
             </div>
             <div className="description-item">
-              <div className="description-item__title">Гарантии</div>
+              <div className="description-item__title">???</div>
               <div className="description-item__text">
                 Много лет на рынке по аренде бытовок
               </div>
@@ -24,13 +24,11 @@ const About = () => {
             </div>
             <div className="description-item">
               <div className="description-item__title">Контакты</div>
-              <div className="description-item__text">Телефон</div>
-              <div className="description-item__text">Пошта</div>
+              <div className="description-item__text">Телефон: +7 (964) 623-24-67</div>
+              <div className="description-item__text">Почта: kirill.litvin.2000@mail.ru</div>
             </div>
           </div>
-          <div className="section-price__map">
-            <YandexMap />
-          </div>
+          <YandexMap />
         </div>
       </div>
     </section>
