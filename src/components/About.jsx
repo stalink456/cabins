@@ -13,19 +13,23 @@ const About = () => {
               <div className="description-item__text">
                 Более трех лет на рынке по аренде бытовок
               </div>
-              <div className="description-item__text">Всегда на связи</div>
-            </div>
-            <div className="description-item">
-              <div className="description-item__title">???</div>
-              <div className="description-item__text">
-                Много лет на рынке по аренде бытовок
-              </div>
-              <div className="description-item__text">Всегда на связи</div>
+              <div className="description-item__text">Работаем по договору</div>
             </div>
             <div className="description-item">
               <div className="description-item__title">Контакты</div>
-              <div className="description-item__text">Телефон: +7 (964) 623-24-67</div>
-              <div className="description-item__text">Почта: kirill.litvin.2000@mail.ru</div>
+              <div className="description-item__text">
+                Телефон: +7 (964) 623-24-67
+              </div>
+              <div className="description-item__text">
+                Почта: kirill.litvin.2000@mail.ru
+              </div>
+            </div>
+            <div className="description-item">
+              <div className="description-item__title">Адрес</div>
+              <div className="description-item__text">
+                деревня Дашковка, 48А, городской округ Серпухов, Московская
+                область
+              </div>
             </div>
           </div>
           <YandexMap />

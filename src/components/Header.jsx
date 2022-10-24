@@ -1,4 +1,5 @@
 import React from "react";
+import cabin from "../assets/cabine.png";
 
 const Header = () => {
   return (
@@ -28,6 +29,9 @@ const Header = () => {
               </ul>
             </div>
           </div>
+          <picture className="section-header-wrapper__image">
+            <img src={cabin} alt="" />
+          </picture>
         </div>
       </div>
     </section>

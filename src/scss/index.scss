@@ -31,8 +31,9 @@ body {
 // === Header ===
 .section-header {
   color: $color-dark;
-  background: url("../assets/cabine.png") no-repeat 90% 60%;
+  background: url("../assets/cabine.png") no-repeat 90% 50%;
   background-color: #fafafa;
+  min-width: 1180px;
 
   .section-inner {
     height: 100vh;
@@ -40,6 +41,7 @@ body {
     z-index: 2;
     display: flex;
     flex-direction: column;
+    padding: 0 20px;
   }
 
   &-top {
@@ -64,7 +66,7 @@ body {
           transition: 0.2s;
 
           &:hover {
-            color: #0d5c63;
+            font-size: 38px;
           }
         }
       }
@@ -109,6 +111,71 @@ body {
         list-style: none;
       }
     }
+
+    &__image {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .section-header {
+    
+    background: none;
+    height: 1200px;
+
+    &-top {
+      &-logo {
+        font-size: 52px;
+      }
+
+      &__contacts {
+        align-self: center;
+        justify-self: center;
+
+        &-telephone {
+          font-size: 45px;
+          margin-bottom: 10px;
+        }
+
+        &-email {
+          display: none;
+        }
+      }
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      padding: 200px 0;
+    }
+
+    &-wrapper {
+      text-align: center;
+      line-height: 50px;
+
+      &__title {
+        font-size: 62px;
+        font-weight: 700;
+        width: 100%;
+        margin-bottom: 50px;
+      }
+
+      &__subtitle {
+        font-size: 52px;
+        line-height: 50px;
+        width: 100%;
+      }
+
+      &__image {
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 65px;
+        width: 100%;
+      }
+    }
   }
 }
 // === / Header ===
@@ -122,6 +189,7 @@ body {
 
 .section-price {
   display: flex;
+  min-width: 1180px;
 
   &-title {
     font-size: 52px;
@@ -161,9 +229,42 @@ body {
   &__image {
     justify-self: center;
     align-self: center;
+    padding-left: 20px;
 
     img {
       width: 100%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .section-price {
+    display: flex;
+    flex-direction: column;
+
+    &-title {
+      font-size: 62px;
+    }
+
+    &__content {
+      .description-item {
+        &__title {
+          font-size: 52px;
+          text-align: center;
+          margin-bottom: 30px;
+        }
+
+        &__text {
+          font-size: 34px;
+          text-align: center;
+          margin-bottom: 65px;
+        }
+      }
+    }
+
+    &__image {
+      width: 80%;
+      margin: 20px 20px;
     }
   }
 }
@@ -182,6 +283,7 @@ body {
 
   form {
     display: flex;
+    padding: 0 20px;
 
     input {
       @include font-montserat;
@@ -217,7 +319,6 @@ body {
       color: #fff;
       cursor: pointer;
       text-decoration: none;
-      // display: inline-block;
       transition: 0.5s;
 
       &:hover {
@@ -230,6 +331,32 @@ body {
     }
   }
 }
+
+@media (max-width: 600px) {
+  .section-form {
+    &__title {
+      font-size: 62px;
+    }
+
+    form {
+      flex-direction: column;
+
+      input {
+        height: 150px;
+        height: 150px;
+        font-size: 45px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+      }
+
+      button {
+        font-size: 45px;
+        height: 150px;
+        border-radius: 15px;
+      }
+    }
+  }
+}
 // === / Form ===
 
 // === About ===
@@ -237,6 +364,10 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #fff;
+
+  .section-inner {
+    padding: 0 20px;
+  }
 
   &-title {
     font-size: 52px;
@@ -279,12 +410,50 @@ body {
         }
       }
     }
+  }
+}
 
+@media (max-width: 600px) {
+  .section-about {
+    &-title {
+      font-size: 62px;
+    }
+
+    .section-about-block {
+      display: flex;
+      flex-direction: column;
+
+      &__content {
+        .description-item {
+          text-align: center;
+          margin-bottom: 40px;
+
+          &__title {
+            font-size: 52px;
+            margin-bottom: 20px;
+          }
+
+          &__text {
+            font-size: 38px;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
   }
 }
 // === / About ===
 
+// === Map ===
 .section-map {
   height: 500px;
   width: 600px;
 }
+
+@media (max-width: 600px) {
+  .section-map {
+    margin: 20px;
+    width: 90%;
+  }
+}
+// === / Map ===

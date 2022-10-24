@@ -7,17 +7,16 @@ const YandexMap = () => {
       <YMaps>
         <Map
           defaultState={{
-            center: [54.901231, 37.338696],
+            center: [54.9025, 37.338249],
             zoom: 17,
             controls: ["zoomControl", "fullscreenControl"],
           }}
           modules={["control.ZoomControl", "control.FullscreenControl"]}
-          // style={{ height: "400px", width: "600px" }}
           style={{ height: "100%", width: "100%" }}
         >
           <Placemark
             modules={["geoObject.addon.balloon"]}
-            defaultGeometry={[54.901231, 37.338696]}
+            defaultGeometry={[54.9025, 37.338249]}
             properties={{
               hintContent: "Аренда бытовок",
               balloonContent: "Аренда бытовок 89646232467",
