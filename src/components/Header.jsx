@@ -3,7 +3,7 @@ import cabin from "../assets/cabine.png";
 
 const Header = () => {
   return (
-    <section className="section-header">
+    <section className="section-header" id="section-header">
       <div className="section-inner">
         <div className="section-header-top">
           <div className="section-header-top-logo">Аренда бытовок</div>

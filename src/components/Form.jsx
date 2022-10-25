@@ -1,18 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import emailjs from "emailjs-com";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const Form = () => {
+const Form = React.memo(({ theme }) => {
   const [toSend, setToSend] = React.useState({
     from_name: "",
     reply_to: "",
   });
+  const [loading, setLoading] = React.useState(false);
 
   const onSubmit = (e) => {
     e.preventDefault();
 
     if (toSend.from_name.length >= 4 && toSend.reply_to.length >= 8) {
+      setLoading(true);
       emailjs
         .send(
           process.env.REACT_APP_SERVICE_ID,
@@ -22,9 +24,11 @@ const Form = () => {
         )
         .then(() => {
           toast.success("Заявка отправлена, мы скоро с Вами свяжемся!");
+          setLoading(false);
         })
         .catch(() => {
           toast.error("Что-то пошло не так");
+          setLoading(false);
         });
 
       setToSend({ from_name: "", reply_to: "" });
@@ -38,7 +42,7 @@ const Form = () => {
   };
 
   return (
-    <div className="section-form">
+    <div className={`section-form ${theme === "white" ? "white" : ""}`}>
       <div className="section-inner">
         <div className="section-form__title">
           Заполните заявку и мы с Вами свяжемся
@@ -58,12 +62,18 @@ const Form = () => {
             value={toSend.reply_to}
             onChange={handleChange}
           />
-          <button type="submit">Отправить</button>
+
+          {loading ? (
+            <div className={`dot${theme === "white" ? "-white" : ""}`}>
+              <div className="dot-flashing"></div>
+            </div>
+          ) : (
+            <button type="submit">Отправить</button>
+          )}
         </form>
       </div>
-      <ToastContainer />
     </div>
   );
-};
+});
 
 export default Form;

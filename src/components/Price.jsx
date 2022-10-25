@@ -4,7 +4,7 @@ import truck from "../assets/truck.png";
 
 const Price = () => {
   return (
-    <section className="section-price">
+    <section className="section-price" id="section-price">
       <div className="section-inner">
         <div className="section-price-title">Грузоперевозки</div>
         <div className="section-price">

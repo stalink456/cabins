@@ -3,7 +3,7 @@ import YandexMap from "./YandexMap";
 
 const About = () => {
   return (
-    <section className="section-about">
+    <section className="section-about" id="section-about">
       <div className="section-inner">
         <div className="section-about-title">О нас</div>
         <div className="section-about-block">
