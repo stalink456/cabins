@@ -20,7 +20,7 @@ const Form = React.memo(({ theme }) => {
           process.env.REACT_APP_SERVICE_ID,
           process.env.REACT_APP_TEMPLATE_ID,
           toSend,
-          process.env.REACT_APP_USER_ID
+          "6IHvlZeKxSrf46aRS"
         )
         .then(() => {
           toast.success("Заявка отправлена, мы скоро с Вами свяжемся!");
