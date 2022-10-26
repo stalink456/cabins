@@ -1,0 +1,83 @@
+@import "variables.scss";
+
+// === Loading ===
+.dot {
+  border: 1px solid $color-white;
+  border-radius: 4px;
+  padding: 16px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot-white {
+  border: 1px solid $color-black;
+  border-radius: 4px;
+  padding: 16px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot-flashing {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: $color-white;
+  color: $color-black;
+  animation: dotFlashing 1s infinite linear alternate;
+  animation-delay: 0.5s;
+}
+
+.dot-flashing::before,
+.dot-flashing::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+}
+
+.dot-flashing::before {
+  left: -15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: $color-white;
+  color: $color-black;
+  animation: dotFlashing 1s infinite alternate;
+  animation-delay: 0s;
+}
+
+.dot-flashing::after {
+  left: 15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: $color-white;
+  color: $color-black;
+  animation: dotFlashing 1s infinite alternate;
+  animation-delay: 1s;
+}
+
+@keyframes dotFlashing {
+  0% {
+    background-color: $color-black;
+  }
+  50%,
+  100% {
+    background-color: $color-white;
+  }
+}
+
+@media (max-width: 600px) {
+  .dot {
+    border-radius: 15px;
+    padding: 65px 50px;
+  }
+
+  .dot-white {
+    border-radius: 15px;
+    padding: 65px 50px;
+  }
+}
+// === / Loading ===

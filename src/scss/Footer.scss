@@ -1,0 +1,82 @@
+@import "variables.scss";
+
+// === Footer ===
+.section-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $color-black;
+
+  &__nav {
+    margin: 0 0 75px;
+    padding: 0;
+    list-style: none;
+
+    li {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      a {
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #464646;
+        text-decoration: none;
+        transition: 0.5s;
+
+        &:hover {
+          color: $color-white;
+        }
+      }
+
+      a:not(:first-child) {
+        margin-left: 60px;
+      }
+    }
+  }
+
+  &__copyright {
+    text-align: center;
+    color: #464646;
+  }
+}
+
+@media (max-width: 991px) {
+  .section-footer {
+    &__nav {
+      margin: 0 20px 75px 20px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .section-footer {
+    &__nav {
+      margin: 0;
+      li {
+        display: flex;
+        flex-direction: column;
+
+        a {
+          font-size: 22px;
+          line-height: 60px;
+          margin-bottom: 20px;
+          text-align: center;
+
+          &:hover {
+            color: #fff;
+          }
+        }
+
+        a:not(:first-child) {
+          margin-left: 0px;
+        }
+      }
+    }
+
+    &__copyright {
+      font-size: 12px;
+    }
+  }
+}
+// === Footer ===

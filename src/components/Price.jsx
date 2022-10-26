@@ -7,11 +7,11 @@ const Price = () => {
     <section className="section-price" id="section-price">
       <div className="section-inner">
         <div className="section-price-title">Грузоперевозки</div>
-        <div className="section-price">
-          <div className="section-price__image">
+        <div className="section-price__block">
+          <div className="section-price__block__image">
             <img src={truck} alt="" />
           </div>
-          <div className="section-price__content">
+          <div className="section-price__block__content">
             <div className="description-item">
               <div className="description-item__title">
                 Бытовки от 8000 рублей в месяц.

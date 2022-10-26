@@ -7,14 +7,7 @@ const Footer = () => {
       <div className="section-inner">
         <ul className="section-footer__nav">
           <li>
-            <Link
-              to="/#section-header"
-              scroll={(el) =>
-                el.scrollIntoView({ behavior: "auto", block: "end" })
-              }
-            >
-              Главная
-            </Link>
+            <Link to="/#section-header">Главная</Link>
             <Link to="/#section-price">Грузоперевозки</Link>
             <Link to="/#section-cabine">Производство бытовок</Link>
             <Link to="/#section-about">О нас</Link>

@@ -20,11 +20,11 @@ const Cabine = () => {
                 Утепленная с электрикой.
               </div>
               <div className="description-item__text">
-                Цена от 120 000 рублей.
+                Цена от <span>120 000</span> рублей.
               </div>
             </div>
             <div className="description-item">
-              <div className="description-item__title">Индивидуальный.</div>
+              <div className="description-item__title">Индивидуальный:</div>
               <div className="description-item__text">
                 Так же производим бытовки под заказ по вашим ТХ.
               </div>
