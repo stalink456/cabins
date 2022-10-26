@@ -92,6 +92,7 @@
 @media (max-width: 662px) {
   .section-header {
     background: none;
+    background-color: $color-white;
 
     &-top {
       display: flex;
@@ -131,9 +132,6 @@
 
 @media (max-width: 600px) {
   .section-header {
-    background: none;
-    // height: calc(100vh + 100px);
-
     &-top {
       &-logo {
         font-size: 42px;
