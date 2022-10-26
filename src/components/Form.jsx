@@ -17,8 +17,8 @@ const Form = React.memo(({ theme }) => {
       setLoading(true);
       emailjs
         .send(
-          process.env.REACT_APP_SERVICE_ID,
-          process.env.REACT_APP_TEMPLATE_ID,
+          "service_urh8bwo",
+          "template_yhtxq43",
           toSend,
           "6IHvlZeKxSrf46aRS"
         )
