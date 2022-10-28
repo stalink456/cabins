@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { navAnimation } from "./Animation";
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <section className="section-footer">
       <div className="section-inner">

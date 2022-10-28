@@ -1,7 +1,7 @@
 import React from "react";
 import { YMaps, Map, Placemark } from "react-yandex-maps";
 
-const YandexMap = () => {
+const YandexMap: React.FC = () => {
   return (
     <div className="section-map">
       <YMaps>

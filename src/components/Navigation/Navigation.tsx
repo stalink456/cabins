@@ -2,10 +2,10 @@ import React from "react";
 import classes from "./NavBar.module.scss";
 import NavLinks from "./NavLinks";
 
-const Navigation = () => {
+const Navigation: React.FC = () => {
   return (
     <nav className={classes.Navigation}>
-      <NavLinks />
+      <NavLinks isMobile={false} closeMobileMenu={() => {}} />
     </nav>
   );
 };

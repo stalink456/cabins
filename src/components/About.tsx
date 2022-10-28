@@ -3,13 +3,13 @@ import { motion } from "framer-motion";
 import { sectionAnimation } from "./Animation";
 import YandexMap from "./YandexMap";
 
-const About = () => {
+const About: React.FC = () => {
   return (
     <motion.section
       initial="hidden"
       whileInView="visible"
       variants={sectionAnimation}
-      transition={{ delay: 0.3 }}
+      transition={{ delay: 0.2 }}
       viewport={{ once: true, amount: 0.3 }}
       className="section-about"
       id="section-about"

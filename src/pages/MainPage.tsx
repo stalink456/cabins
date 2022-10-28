@@ -6,7 +6,7 @@ import Header from "../components/Header";
 import Price from "../components/Price";
 import Footer from "../components/Footer";
 
-const MainPage = () => {
+const MainPage: React.FC = () => {
   return (
     <div>
       <Header />

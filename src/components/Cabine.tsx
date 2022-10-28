@@ -4,13 +4,13 @@ import { sectionAnimation } from "./Animation";
 import Form from "./Form";
 import cabineCreate from "../assets/cabine_create.png";
 
-const Cabine = () => {
+const Cabine: React.FC = () => {
   return (
     <motion.section
       initial="hidden"
       whileInView="visible"
       variants={sectionAnimation}
-      transition={{ delay: 0.3 }}
+      transition={{ delay: 0.2 }}
       viewport={{ once: true, amount: 0.3 }}
       className="section-cabine"
       id="section-cabine"

@@ -1,9 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import emailjs from "emailjs-com";
 import { toast } from "react-toastify";
+import { formType } from "./types";
 import "react-toastify/dist/ReactToastify.css";
 
-const Form = React.memo(({ theme }) => {
+const Form: React.FC<formType> = React.memo(({ theme }) => {
   const [toSend, setToSend] = React.useState({
     from_name: "",
     reply_to: "",
@@ -15,7 +16,7 @@ const Form = React.memo(({ theme }) => {
   });
   const [loading, setLoading] = React.useState(false);
 
-  const onSubmit = (e) => {
+  const onSubmit = (e: React.ChangeEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (toSend.from_name.length >= 4 && toSend.reply_to.length >= 8) {
@@ -42,7 +43,7 @@ const Form = React.memo(({ theme }) => {
     }
   };
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setToSend({ ...toSend, [e.target.name]: e.target.value });
   };
 

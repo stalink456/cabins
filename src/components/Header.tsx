@@ -4,7 +4,7 @@ import { headerAnimation, headerAnimationReverse } from "./Animation";
 import cabin from "../assets/cabine.png";
 import NavBar from "./Navigation/NavBar";
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <section className="section-header" id="section-header">
       <div className="section-inner">

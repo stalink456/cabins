@@ -1,9 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { navAnimation } from "../Animation";
+import { navLinksType } from "../types";
 import "./NavBar.module.scss";
 
-const NavLinks = ({ isMobile, closeMobileMenu }) => {
+const NavLinks: React.FC<navLinksType> = ({ isMobile, closeMobileMenu }) => {
   return (
     <ul>
       <motion.li

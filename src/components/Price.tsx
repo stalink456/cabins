@@ -1,16 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { sectionAnimation } from "./Animation";
-import Form from "../components/Form";
+import Form from "./Form";
 import truck from "../assets/truck.png";
 
-const Price = () => {
+const Price: React.FC = () => {
   return (
     <motion.section
       initial="hidden"
       whileInView="visible"
       variants={sectionAnimation}
-      transition={{ delay: 0.3 }}
+      transition={{ delay: 0.2 }}
       viewport={{ once: true, amount: 0.3 }}
       className="section-price"
       id="section-price"
@@ -41,7 +41,7 @@ const Price = () => {
             </div>
           </div>
         </div>
-        <Form />
+        <Form theme="" />
       </div>
     </motion.section>
   );
