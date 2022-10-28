@@ -2,13 +2,8 @@
 
 // === About ===
 .section-about {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 20px;
   background-color: $color-black;
-
-  .section-inner {
-    padding: 0 20px;
-  }
 
   &-title {
     font-size: 52px;
@@ -48,6 +43,11 @@
           font-size: 24px;
           line-height: 45px;
           font-weight: 300;
+
+          a {
+            text-decoration: none;
+            color: $color-white;
+          }
         }
       }
     }

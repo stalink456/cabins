@@ -2,8 +2,7 @@
 
 // === Price ===
 .section-price {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 20px;
   background-color: $color-black;
 
   &-title {
@@ -106,6 +105,12 @@
       width: 80%;
       margin: 20px 20px;
     }
+  }
+}
+
+@media (max-width: 469px) {
+  .section-price-title {
+    font-size: 34px;
   }
 }
 // === / Price ===

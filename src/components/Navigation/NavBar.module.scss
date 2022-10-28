@@ -1,0 +1,87 @@
+@import "../../scss/variables.scss";
+
+.MobileNavigation {
+  display: none;
+}
+
+.Navigation {
+  padding-top: 10px;
+}
+
+nav li {
+  list-style: none;
+
+  a {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #464646;
+    margin-left: 40px;
+    text-decoration: none;
+    transition: 0.5s;
+
+    &:hover {
+      color: #181717;
+    }
+  }
+}
+
+@media (max-width: 1208px) {
+  .Navigation {
+    display: none;
+  }
+
+  .MobileNavigation {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .MobileNavigation .Hamburger {
+    position: absolute;
+    right: 5%;
+    z-index: 1;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  nav li {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    right: 0;
+    padding: 50px 0px;
+    width: 100%;
+    background: $color-black;
+    border-top: 2px solid $color-black;
+
+    a {
+      font-size: 22px;
+      line-height: 50px;
+      font-weight: 300;
+      text-transform: uppercase;
+      color: $color-white;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: $color-dark;
+    }
+  }
+
+  .section-header-top {
+    background: $color-black;
+  }
+
+  .section-header-top-logo {
+    border-right: none;
+  }
+}
+
+@media (max-width: 469px) {
+  .MobileNavigation .Hamburger {
+    margin-top: 0px;
+  }
+}

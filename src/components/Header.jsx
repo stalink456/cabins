@@ -1,5 +1,7 @@
 import React from "react";
+import NavLinks from "./Navigation/NavLinks";
 import cabin from "../assets/cabine.png";
+import NavBar from "./Navigation/NavBar";
 
 const Header = () => {
   return (
@@ -7,14 +9,7 @@ const Header = () => {
       <div className="section-inner">
         <div className="section-header-top">
           <div className="section-header-top-logo">Аренда бытовок</div>
-          <div className="section-header-top__contacts">
-            <div className="section-header-top__contacts-telephone">
-              <a href="tel:+79646232467"> +7 (964) 623-24-67</a>
-            </div>
-            <div className="section-header-top__contacts-email">
-              kirill.litvin.2000@mail.ru
-            </div>
-          </div>
+          <NavBar style="section-header-top__nav" />
         </div>
         <div className="section-header-content">
           <div className="section-header-wrapper">
@@ -29,9 +24,9 @@ const Header = () => {
               </ul>
             </div>
           </div>
-          <picture className="section-header-wrapper__image">
+          <div className="section-header-wrapper__image">
             <img src={cabin} alt="" />
-          </picture>
+          </div>
         </div>
       </div>
     </section>

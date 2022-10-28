@@ -18,7 +18,7 @@ const About = () => {
             <div className="description-item">
               <div className="description-item__title">Контакты</div>
               <div className="description-item__text">
-                Телефон: +7 (964) 623-24-67
+                Телефон: <a href="tel:+79646232467"> +7 (964) 623-24-67</a>
               </div>
               <div className="description-item__text">
                 Почта: kirill.litvin.2000@mail.ru

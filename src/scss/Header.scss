@@ -3,7 +3,6 @@
 // === Header ===
 .section-header {
   color: $color-dark;
-  background: url("../assets/cabine.png") no-repeat 90% 50%;
   background-color: $color-white;
 
   .section-inner {
@@ -17,35 +16,21 @@
 
   &-top {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     padding-top: 35px;
 
     &-logo {
       font-weight: bold;
       font-size: 42px;
       color: $color-black;
+      padding-right: 30px;
+      border-right: 1px solid #000;
     }
 
-    &__contacts {
-      line-height: 32px;
-      &-telephone {
-        font-size: 22px;
-
-        a {
-          color: $color-black;
-          text-decoration: none;
-          transition: 0.2s;
-
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-      }
-
-      &-email {
-        font-size: 22px;
-        font-weight: 300;
-      }
+    &__nav {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 5px;
     }
   }
 
@@ -60,10 +45,10 @@
 
     &__title {
       font-weight: bold;
-      font-size: 45px;
-      line-height: 60px;
+      font-size: 34px;
+      line-height: 50px;
       margin-bottom: 16px;
-      width: 70%;
+      width: 100%;
       text-transform: uppercase;
     }
 
@@ -84,14 +69,34 @@
     }
 
     &__image {
-      display: none;
+      margin-right: -50px;
+    }
+  }
+}
+
+@media (max-width: 1243px) {
+  .section-header-wrapper__image {
+    margin-right: -20px;
+  }
+}
+
+@media (max-width: 1208px) {
+  .section-header-top-logo {
+    border-right: none;
+  }
+}
+
+@media (max-width: 955px) {
+  .section-header-wrapper__image {
+    margin-right: 0px;
+    img {
+      width: 100%;
     }
   }
 }
 
 @media (max-width: 662px) {
   .section-header {
-    background: none;
     background-color: $color-white;
 
     &-top {
@@ -135,6 +140,7 @@
     &-top {
       &-logo {
         font-size: 42px;
+        padding-right: 0px;
       }
     }
 
@@ -153,6 +159,22 @@
         font-size: 22px;
       }
     }
+  }
+}
+
+@media (max-width: 469px) {
+  .section-header-top {
+    justify-content: flex-start;
+
+    &-logo {
+      font-size: 34px;
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .section-header-top-logo {
+    font-size: 27px;
   }
 }
 // === / Header ===

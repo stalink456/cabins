@@ -1,5 +1,4 @@
 import React from "react";
-import { HashLink as Link } from "react-router-hash-link";
 
 const Footer = () => {
   return (
@@ -7,10 +6,10 @@ const Footer = () => {
       <div className="section-inner">
         <ul className="section-footer__nav">
           <li>
-            <Link to="/#section-header">Главная</Link>
-            <Link to="/#section-price">Грузоперевозки</Link>
-            <Link to="/#section-cabine">Производство бытовок</Link>
-            <Link to="/#section-about">О нас</Link>
+            <a href="/#section-header">Главная</a>
+            <a href="/#section-price">Грузоперевозки</a>
+            <a href="/#section-cabine">Производство бытовок</a>
+            <a href="/#section-about">О нас</a>
           </li>
         </ul>
         <div className="section-footer__copyright">

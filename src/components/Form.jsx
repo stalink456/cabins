@@ -8,6 +8,11 @@ const Form = React.memo(({ theme }) => {
     from_name: "",
     reply_to: "",
   });
+  const [credentials, setCredentials] = React.useState({
+    serviceId: "service_urh8bwo",
+    templateId: "template_yhtxq43",
+    userId: "6IHvlZeKxSrf46aRS",
+  });
   const [loading, setLoading] = React.useState(false);
 
   const onSubmit = (e) => {
@@ -17,10 +22,10 @@ const Form = React.memo(({ theme }) => {
       setLoading(true);
       emailjs
         .send(
-          "service_urh8bwo",
-          "template_yhtxq43",
+          credentials.serviceId,
+          credentials.templateId,
           toSend,
-          "6IHvlZeKxSrf46aRS"
+          credentials.userId
         )
         .then(() => {
           toast.success("Заявка отправлена, мы скоро с Вами свяжемся!");
