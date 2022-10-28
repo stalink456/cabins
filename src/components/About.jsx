@@ -1,9 +1,19 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { sectionAnimation } from "./Animation";
 import YandexMap from "./YandexMap";
 
 const About = () => {
   return (
-    <section className="section-about" id="section-about">
+    <motion.section
+      initial="hidden"
+      whileInView="visible"
+      variants={sectionAnimation}
+      transition={{ delay: 0.3 }}
+      viewport={{ once: true, amount: 0.3 }}
+      className="section-about"
+      id="section-about"
+    >
       <div className="section-inner">
         <div className="section-about-title">О нас</div>
         <div className="section-about-block">
@@ -35,7 +45,7 @@ const About = () => {
           <YandexMap />
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

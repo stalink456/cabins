@@ -5,6 +5,7 @@ import classes from "./NavBar.module.scss";
 
 const MobileNavigation = () => {
   const [open, setOpen] = React.useState(false);
+  const closeMobileMenu = () => setOpen(false);
 
   return (
     <nav className={classes.MobileNavigation}>
@@ -22,7 +23,7 @@ const MobileNavigation = () => {
           onClick={() => setOpen(!open)}
         />
       )}
-      {open && <NavLinks />}
+      {open && <NavLinks isMobile={true} closeMobileMenu={closeMobileMenu} />}
     </nav>
   );
 };

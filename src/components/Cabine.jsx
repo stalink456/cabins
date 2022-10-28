@@ -1,10 +1,20 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { sectionAnimation } from "./Animation";
 import Form from "./Form";
 import cabineCreate from "../assets/cabine_create.png";
 
 const Cabine = () => {
   return (
-    <section className="section-cabine" id="section-cabine">
+    <motion.section
+      initial="hidden"
+      whileInView="visible"
+      variants={sectionAnimation}
+      transition={{ delay: 0.3 }}
+      viewport={{ once: true, amount: 0.3 }}
+      className="section-cabine"
+      id="section-cabine"
+    >
       <div className="section-inner">
         <div className="section-cabine__title">Производство бытовок</div>
         <div className="section-cabine__block">
@@ -36,7 +46,7 @@ const Cabine = () => {
         </div>
         <Form theme="white" />
       </div>
-    </section>
+    </motion.section>
   );
 };
 
