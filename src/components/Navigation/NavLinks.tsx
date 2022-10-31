@@ -32,7 +32,7 @@ const NavLinks: React.FC<navLinksType> = ({ isMobile, closeMobileMenu }) => {
           viewport={{ once: true }}
           href="/#section-price"
         >
-          Грузоперевозки
+          Услуги
         </motion.a>
         <motion.a
           initial="hidden"

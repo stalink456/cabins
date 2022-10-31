@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
               viewport={{ once: true }}
               href="/#section-price"
             >
-              Грузоперевозки
+              Услуги
             </motion.a>
             <motion.a
               initial="hidden"
@@ -56,7 +56,7 @@ const Footer: React.FC = () => {
           </motion.li>
         </ul>
         <div className="section-footer__copyright">
-          Авторское право © @stalink456 2022 Все права защищены
+          © 2022 Все права защищены
         </div>
       </div>
     </section>

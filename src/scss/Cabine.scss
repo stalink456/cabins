@@ -38,6 +38,10 @@
           line-height: 36px;
           font-weight: bold;
           margin-bottom: 20px;
+
+          span {
+            font-weight: 300;
+          }
         }
 
         &__text {
@@ -46,6 +50,7 @@
           font-weight: 300;
 
           span {
+            font-size: 30px;
             font-weight: 700;
           }
         }

@@ -4,8 +4,9 @@
   display: none;
 }
 
-.Navigation {
-  padding-top: 10px;
+.NavBar {
+  display: flex;
+  align-items: center;
 }
 
 nav li {
@@ -28,6 +29,10 @@ nav li {
 }
 
 @media (max-width: 1208px) {
+  .NavBar {
+    display: block;
+  }
+
   .Navigation {
     display: none;
   }
@@ -41,7 +46,7 @@ nav li {
     position: absolute;
     right: 5%;
     z-index: 1;
-    margin-top: 10px;
+    margin-top: 20px;
     cursor: pointer;
   }
 
@@ -61,6 +66,7 @@ nav li {
       font-size: 22px;
       line-height: 50px;
       font-weight: 300;
+      margin-left: 0;
       text-transform: uppercase;
       color: $color-white;
       text-decoration: none;
@@ -77,11 +83,5 @@ nav li {
 
   .section-header-top-logo {
     border-right: none;
-  }
-}
-
-@media (max-width: 469px) {
-  .MobileNavigation .Hamburger {
-    margin-top: 0px;
   }
 }

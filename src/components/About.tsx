@@ -31,14 +31,13 @@ const About: React.FC = () => {
                 Телефон: <a href="tel:+79646232467"> +7 (964) 623-24-67</a>
               </div>
               <div className="description-item__text">
-                Почта: kirill.litvin.2000@mail.ru
+                Почта: tvoy-garant@mail.ru
               </div>
             </div>
             <div className="description-item">
               <div className="description-item__title">Адрес</div>
               <div className="description-item__text">
-                деревня Дашковка, 48А, городской округ Серпухов, Московская
-                область
+                Московская область, гор. округ Серпухов, деревня Дашковка, 48А
               </div>
             </div>
           </div>
