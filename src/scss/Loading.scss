@@ -1,19 +1,21 @@
 @import "variables.scss";
 
 // === Loading ===
-.dot {
-  border: 1px solid $color-white;
+.dot-white {
+  border: 1px solid $color-black;
+  background: $color-black;
   border-radius: 4px;
-  padding: 16px 50px;
+  padding: 20px 55px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.dot-white {
-  border: 1px solid $color-black;
+.dot {
+  border: 1px solid $color-white;
+  background: $color-white;
   border-radius: 4px;
-  padding: 16px 50px;
+  padding: 20px 55px;
   display: flex;
   justify-content: center;
   align-items: center;

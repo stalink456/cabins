@@ -43,6 +43,14 @@ nav li {
   }
 
   .MobileNavigation .Hamburger {
+    position: fixed;
+    right: 5%;
+    z-index: 1;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+  .HamburgerClose {
     position: absolute;
     right: 5%;
     z-index: 1;
@@ -53,10 +61,10 @@ nav li {
   nav li {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     top: 0;
-    text-align: center;
     right: 0;
+    text-align: center;
     padding: 50px 0px;
     width: 100%;
     background: $color-black;

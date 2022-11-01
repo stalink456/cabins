@@ -17,7 +17,7 @@ const MobileNavigation: React.FC = () => {
         />
       ) : (
         <TfiMenuAlt
-          className={classes.Hamburger}
+          className={classes.HamburgerClose}
           size="40px"
           onClick={() => setOpen(!open)}
         />
