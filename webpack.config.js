@@ -1,6 +1,7 @@
 const path = require("path");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   mode: "development",
@@ -15,6 +16,8 @@ module.exports = {
       favicon: "./public/favicon.ico",
     }),
     new CleanWebpackPlugin(),
+    new CopyPlugin({ patterns: [{ from: "robots.txt", to: "robots.txt" }] }),
+    new CopyPlugin({ patterns: [{ from: "sitemap.xml", to: "sitemap.xml" }] }),
   ],
   devServer: {
     watchFiles: ["./public/*"],
