@@ -1,4 +1,4 @@
 User-agent: *
 
-Host: https://xn--80ac8bj8b.xn--p1ai/
-Sitemap: https://xn--80ac8bj8b.xn--p1ai/sitemap.xml
+Host: https://www.xn--80ac8bj8b.xn--p1ai/
+Sitemap: https://www.xn--80ac8bj8b.xn--p1ai/sitemap.xml
